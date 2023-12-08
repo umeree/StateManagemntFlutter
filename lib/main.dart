@@ -8,6 +8,7 @@ import 'package:stateamnagement/screens/count.dart';
 import 'package:stateamnagement/screens/dark_theme.dart';
 import 'package:stateamnagement/screens/favouriteApp.dart';
 import 'package:stateamnagement/screens/slider.dart';
+import 'package:stateamnagement/screens/value_notifier.dart';
 
 void main() {
   runApp(const MyApp());
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
               primarySwatch: Colors.deepPurple,
             ),
             darkTheme: ThemeData(brightness: Brightness.dark),
-            home: DarkTheme(),
+            home: NotifyListeners(),
           );
         },
       ),
